@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jolly+Lodger&family=Mystery+Quest&family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Movie.com</title>
+</head>
+<body>
+    <header>
+    <nav class="head-style">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="./img/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" style="height: 26px; width: 26px;" alt=""></a></li>
+            <li><a href="#" class="logo">MOVIE.COM</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">
+                    <div class="search-container ">
+                        <input class="input-style-mobile" type="text" placeholder="Search" id="searchInput">
+                        <img class="search-png" src="./img/search-interface-symbol.png" alt="search-img">
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#" class="logo">MOVIE.COM</a></li>
+            <li class="hideOnMobile"><a href="#">Movies</a></li>
+            <li class="hideOnMobile"><a href="#">Series</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile">
+                <a href="#">
+                    <div class="search-container ">
+                        <input class="input-style" type="text" placeholder="Search" id="searchInput">
+                        <img class="search-png" src="./img/search-interface-symbol.png" alt="search-img">
+                    </div>
+                </a>
+            </li>
+            
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="./img/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" style="height: 26px; width: 26px;" alt=""></a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <div class="image-wrapper">
+        <img src="./img/left-arrow.png" alt="overlay" class="img-front1">
+        <img src="./img/batman.jpg" alt="background" class="img-back">
+        <img src="./img/right-arrow.png" alt="overlay" class="img-front2">
+    </div>
+
+
+    <div class="container">
+        <h1 class="products-h1">Movies</h1>
+        <div class="products" id="products"></div>
+    </div>
+    <script src="./script.js"></script>
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>MOVIE.COM</h3>
+      <p>Discover movies, series and entertainment.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Series</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 MOVIE.COM — All rights reserved
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+        
+    </script>
+    
+
+</body>
+</html>
